@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+}
+
+/* sidebar */
+
+.sidebar{
+    width: 276px;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0px 0px 40px -3px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar-title{
+    padding: 50px 75px;
+}
+
+.sidebar-list{
+    padding: 30px;
+    list-style: none;
+}
+
+.sidebar-list-item{
+    padding: 20px;
+    font-size: 18px;
+}
+
+.sidebar-list-item.active{
+    background-color: #675AF0;
+    border-radius: 8px;
+}
+
+.sidebar-list-item:hover{
+    transition: 0.5s;
+    border-radius: 8px;
+    background-color: #675AF0;
+    cursor: pointer;
+}
+
+#span_sidebar{
+    color: #675AF0;
+    font-size: 25px;
+    font-weight: 700;
+    padding-top: 28px;
+}
+
+.list-item{
+    margin-left: 17px;
+}
+
+   /* end sidebar */
+
+   /* header */
+   
+.container_2{
+    min-height: 100vh;
+    width: calc(100% - 276px);
+    margin-left: 276px;
+}
+
+.header{
+    display: flex;
+    background-color: white;
+    height: 90px;
+}
+
+#span_header{
+    padding-left: 40px;
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 30px;
+}
+
+.header-account{
+    margin-left: 730px;
+    color:#FFFFFF;
+    display: flex;
+    align-items: center;
+    margin-right: 39px;
+    gap:12px;
+}
+
+.header-photo{
+    margin-right: 8px;
+}
+
+.arrow.active{
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+
+.header .arrow:hover{
+    cursor: pointer;
+}
+
+/* end header */
+
+ /* main */
+
+.main{
+    background-color:#F6F6F6;
+    width: 100%;
+    min-height: calc(100vh - 90px);
+}
+
+
+/* end main */
+
+/* card */
+
+.card{
+    display: flex;
+    padding: 30px 20px;
+}
+
+/* card left */
+
+.about_student{
+    display: flex;
+    padding: 15px;
+    width: 550px;
+    height: 215px;
+    border-radius:8px;
+    background-color: white;
+}
+
+.information{
+    width: 300px;
+}
+
+#li{
+    font-size: 23px;
+}
+
+.about_student ul{
+    list-style: none;
+}
+
+#ul li {
+    margin-left: 50px;
+    padding-top: 20px;
+}
+
+.about_student button{
+    background-color:orange;
+    height: 35px;
+    width: 70px;
+    border: none;
+    border-radius:7px;
+    margin-top: 20px;
+    margin-left: 50px;
+    -webkit-border-radius:7px;
+    -moz-border-radius:7px;
+    -ms-border-radius:7px;
+    -o-border-radius:7px;
+}
+
+.icon{
+    display: flex;
+
+}
+
+.icon ul li img{
+    margin-left: 15px;
+    margin-top: 24px;
+}
+
+.icon ul{
+    display: flex;
+    flex-direction: row;
+}
+
+/* end left card */
+
+/* right card */
+
+.prize_student{
+    width: 550px;
+    height: 245px;
+    margin-left: 100px;
+    border-radius:8px;
+    background-color: white;
+    position: relative;
+}
+
+.prize_student ul{
+    list-style: none;
+}
+
+.prize_student ul li{
+    margin-top: 30px ;
+    margin-left: 35px;
+}
+
+.prize_student ul li span{
+    margin-left: 40px;
+}
+
+.prize_student a{
+    text-decoration: none;
+    margin-left: 230px;
+    font-size: 18px;
+    bottom: 20px;
+    color:#675AF0;
+    position: absolute;
+}
+
+/* end right card */
+
+main p{
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+/* exam */
+
+.cards-container{
+    display: flex;
+    padding-left:20px ;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 60px;
+}
+
+.exam{
+    width: 253px;
+    height: 293px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 0px 32px -3px rgba(0, 0, 0, 0.15);
+}
+
+.card-image{
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card-info{
+    margin: 10px 15px;
+}
+
+.exam-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-number,.teacher-name{
+    color: red;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.question-data{
+    position: relative;
+    top: 5px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.exam-name{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.card-buttons{
+    margin-top: 10px;
+    display: flex;
+    position: relative;
+}
+
+.more-details{
+    width: 102px;
+    height: 33px;
+    border-radius: 5px;
+    background: none;
+    border-radius: 5px;
+    color:#675AF0 ;
+    border: 3px solid #675AF0;
+    font-size: 14px;
+    font-weight: 400;
+    bottom:-25px;
+    position: absolute;
+    margin-left: 140px;
+    transition: all 0.3s ease;
+}
+
+.more-details:hover{
+    background-color:#675AF0 ;
+    transition: 0.5s;
+    cursor: pointer;
+    color:white;
+}
+
+/* end exam */
+
+/* input */
+
+.input div{
+    bottom: 10px;
+    
+    position: relative;
+}
+
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rangeValue{
+    position: relative;
+    display: block;
+    text-align: right;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.range{
+    width: 225px ;
+    outline: none;
+    border-radius: 15px;
+    overflow: hidden;
+    -webkit-appearance: none;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-color:#E2E2E2;
+}
+
+#toggle:hover{
+    cursor: pointer;
+}
+
+.range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: -410px 0 0 400px green;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/* end input */
+
+/* toggle */
+
+body{
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+#toggle{
+    position: relative;
+    top: 10px;
+    left: 18px;
+    display: block;
+    width: 70px;
+    height: 35px;
+    background-color: #E2E2E2;
+    transition: 0.5s;
+    border-radius:160px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+     inset 0 8px 8px rgba(0, 0, 0, 0.1),
+    inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+}
+
+#toggle.active{
+    background-color:#675AF0;
+    box-shadow:inset 0 2px 60px rgba(0,0,0,0.1),
+    inset 0 2px 8px rgba(0,0,0,0.1),
+    inset 0 -4px 8px rgba(0,0,0,0.05),
+}
+
+#toggle .indicator{
+   position: absolute;
+   top: 5px;
+   left: 4px;
+   width: 26px;
+   height: 26px;
+   background-color:white;
+   border-radius:50%;
+   transform: scale(0.9);
+   transition: 0.5s;
+   -webkit-transition: 0.5s;
+   -moz-transition: 0.5s;
+   -ms-transition: 0.5s;
+   -o-transition: 0.5s;
+}
+
+#toggle.active .indicator {
+     background-color: #302B2B;
+     left: 42px;
+}
+
+/* end toggle */
+
+/* color */
+
+.sidebar.active,#span_sidebar.active,span.active,.header.active,
+main.active,.about_student.active,.prize_student.active,.exam.active,
+#span_header.active,.mail.active,.exam.active
+{
+    transition: 0.5s;
+}
+
+#span_header.active,.mail.active,#span_sidebar.active,span.active,
+#exam.active{
+    color:white;
+}
+
+.sidebar.active,.header.active{
+    background-color:#2B2A2A;
+}
+
+.main.active{
+    background-color:#3B323C
+}
+
+.about_student.active,.prize_student.active,.exam.active{
+    background-color:#302B2B;
+}
