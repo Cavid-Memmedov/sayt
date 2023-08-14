@@ -1,7 +1,5 @@
 const root = document.querySelector(':root');
 
-
-
 let icon=document.querySelector('.arrow');
 
 icon.addEventListener('click', () =>{
